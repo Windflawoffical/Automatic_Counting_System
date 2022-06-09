@@ -84,7 +84,7 @@ public class signin extends AppCompatActivity implements View.OnClickListener{
                     Intent intent = new Intent(getApplicationContext(),Home.class);
                     startActivity(intent);
                 }else {
-                    Toast.makeText(signin.this, "Регистрация провалена", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(signin.this, "Авторизация провалена", Toast.LENGTH_SHORT).show();
                     startActivity(intent);
                 }
             }
