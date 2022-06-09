@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registration"
+    android:background="@color/blue_800">
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:hint="Email"
+        android:textColorHint="@color/white"
+        android:textSize="25dp">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_email"
+        android:layout_centerHorizontal="true"
+        android:password="true"
+        android:hint="Password"
+        android:textColorHint="@color/white"
+        android:textSize="25dp">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_password"
+        android:layout_centerHorizontal="true"
+        android:hint="Name"
+        android:textColorHint="@color/white"
+        android:textSize="25dp">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_address"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_name"
+        android:layout_centerHorizontal="true"
+        android:hint="Address"
+        android:textColorHint="@color/white"
+        android:textSize="25dp">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_registration"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/et_address"
+        android:text="Зарегистрироваться"
+        android:textColor="@color/lime"
+        android:backgroundTint="@color/blue"/>
+    <CheckBox
+        android:id="@+id/showHideBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/et_password"
+        android:layout_alignParentRight="true"
+        android:text="Show"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:layout_marginRight="60dp">
+
+    </CheckBox>
+
+</RelativeLayout>

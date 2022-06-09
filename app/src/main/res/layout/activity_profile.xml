@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_800"
+    tools:context=".Profile">
+
+    <TextView
+        android:id="@+id/email_lk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your email: "
+        android:textColor="@color/white"
+        android:textSize="30dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/pole_dlya_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email_lk"
+        android:layout_centerInParent="true"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="30dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/name_lk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your name: "
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="117dp"
+        android:layout_below="@+id/pole_dlya_email">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/pole_dlya_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_lk"
+        android:layout_centerInParent="true"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="30dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/address_lk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your address: "
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="66dp"
+        android:layout_below="@+id/pole_dlya_name">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/pole_dlya_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address_lk"
+        android:layout_centerInParent="true"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="30dp">
+
+    </TextView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/silver"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu_navigator">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_home"
+        android:title="Home"
+        android:icon="@drawable/ic_home">
+
+    </item>
+    <item
+        android:id="@+id/item_payment"
+        android:title="Payment and compare"
+        android:icon="@drawable/ic_payment">
+    </item>
+    <item
+        android:id="@+id/item_profile"
+        android:title="My Profile"
+        android:icon="@drawable/ic_profile">
+    </item>
+</menu>

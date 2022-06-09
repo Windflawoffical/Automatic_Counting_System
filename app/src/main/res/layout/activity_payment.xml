@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_800"
+    tools:context=".Payment">
+
+    <TextView
+        android:id="@+id/code_platelshika"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Код плательщика: "
+        android:textColor="@color/white"
+        android:textSize="30dp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/pole_dlya_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/code_platelshika"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textSize="30dp">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/payment"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pole_dlya_code"
+        android:backgroundTint="@color/gray"
+        android:text="Оплатить ЖКУ"
+        android:textColor="@color/black">
+
+    </Button>
+
+    <Button
+        android:id="@+id/history"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/payment"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/gray"
+        android:layout_below="@id/pole_dlya_code"
+        android:text="История платежей"
+        android:textColor="@color/black">
+
+    </Button>
+
+    <Button
+        android:id="@+id/compare"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/historyformonths"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="@color/gray"
+        android:text="Compare"
+        android:textColor="@color/black">
+
+    </Button>
+
+    <Button
+        android:id="@+id/historyformonths"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/gray"
+        android:layout_below="@id/history"
+        android:layout_centerHorizontal="true"
+        android:text="Расходы за определённый месяц"
+        android:textColor="@color/black">
+
+    </Button>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/silver"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu_navigator">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</RelativeLayout>
